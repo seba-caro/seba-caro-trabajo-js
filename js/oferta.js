@@ -28,7 +28,7 @@ while (seleccionarProductos != 0) {
             total += cantidad(seleccionarCantidad, 8000)
             break;
         case 5:
-            
+
         default:
             break;
     }
@@ -61,5 +61,56 @@ const metodoDePago = () => {
 
 }
 
-metodoDePago()
+metodoDePago();
+
+
+let producto1 = {
+    nombre: "Camiseta Seleccion argentina",
+    precio: 12000,
+    Disponible: true,
+}
+    console.log(producto1);
+
+
+let producto2 = {
+    nombre: "Camiseta blanca 3 estrellas",
+    precio: 4000,
+    Disponible: true,
+}
+
+    let producto3 = {
+        nombre: "Camiseta Entrada en calor",
+    precio: 6000,
+    Disponible: true,
+    }
+    let producto4 = {
+        nombre: "Camiseta Entrada en calor azul y negra",
+    precio: 6000,
+    Disponible: true,
+    }
+
+    let promo1 = {
+        nombre: "2 remeras",
+        precio: 3000,
+        Disponible: true,
+    }
+        console.log(producto1);
+    
+    
+    let Promo2 = {
+        nombre: "2 pantalones",
+        precio: 5500,
+        Disponible: true,
+    }
+    
+        let Promo3 = {
+            nombre: "2 pares de zapatillas",
+        precio: 16000,
+        Disponible: true,
+        }
+        let Promo4 = {
+            nombre: "4 shorts",
+        precio: 8000,
+        Disponible: true,
+        }
 
