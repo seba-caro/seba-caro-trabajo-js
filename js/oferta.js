@@ -94,7 +94,6 @@ let producto2 = {
         precio: 3000,
         Disponible: true,
     }
-        console.log(producto1);
     
     
     let Promo2 = {
@@ -114,3 +113,22 @@ let producto2 = {
         Disponible: true,
         }
 
+const promociones = [ promo1, Promo2, Promo3, Promo4];
+
+const productos = [producto1, producto2, producto3, producto4];
+
+for(let i=0; i<4; i+=1){
+    console.log(promociones[i])
+}
+
+for(let i=0; i<4; i+=1){
+    console.log(productos[i])
+}
+
+
+productos.push(Producto5 = {
+    nombre: "Chomba Seleccion Argentina",
+    precio: 5000,
+    Disponible: true,
+});
+console.log(productos)
