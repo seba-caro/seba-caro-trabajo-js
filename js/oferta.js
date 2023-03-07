@@ -132,3 +132,28 @@ productos.push(Producto5 = {
     Disponible: true,
 });
 console.log(productos)
+
+productos.push(Producto6 = {
+    nombre: "Camiseta campeones edicion limitada ",
+    precio: 4000,
+    Disponible: true,
+});
+console.log(productos)
+
+productos.push(Producto7 = {
+    nombre: "Buzo campeones edicion limitada",
+    precio: 8000,
+    Disponible: true,
+});
+console.log(productos)
+
+
+function descuentopormayor (n){
+    return function(m){
+        return (n*m)*0.10
+    }
+}
+
+
+const quintuplicador = descuentopormayor (5);
+console.log(quintuplicador(4000))
