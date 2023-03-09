@@ -64,26 +64,26 @@ const metodoDePago = () => {
 metodoDePago();
 
 
-let producto1 = {
+let producto0 = {
     nombre: "Camiseta Seleccion argentina",
     precio: 12000,
     Disponible: true,
 }
-    console.log(producto1);
+    console.log(producto0);
 
 
-let producto2 = {
+let producto1 = {
     nombre: "Camiseta blanca 3 estrellas",
     precio: 4000,
     Disponible: true,
 }
 
-    let producto3 = {
+    let producto2 = {
         nombre: "Camiseta Entrada en calor",
     precio: 6000,
     Disponible: true,
     }
-    let producto4 = {
+    let producto3 = {
         nombre: "Camiseta Entrada en calor azul y negra",
     precio: 6000,
     Disponible: true,
@@ -115,7 +115,7 @@ let producto2 = {
 
 const promociones = [ promo1, Promo2, Promo3, Promo4];
 
-const productos = [producto1, producto2, producto3, producto4];
+const productos = [producto0, producto1, producto2, producto3];
 
 for(let i=0; i<4; i+=1){
     console.log(promociones[i])
@@ -126,21 +126,21 @@ for(let i=0; i<4; i+=1){
 }
 
 
-productos.push(Producto5 = {
+productos.push(Producto4 = {
     nombre: "Chomba Seleccion Argentina",
     precio: 5000,
     Disponible: true,
 });
 console.log(productos)
 
-productos.push(Producto6 = {
+productos.push(Producto5 = {
     nombre: "Camiseta campeones edicion limitada ",
     precio: 4000,
     Disponible: true,
 });
 console.log(productos)
 
-productos.push(Producto7 = {
+productos.push(Producto6 = {
     nombre: "Buzo campeones edicion limitada",
     precio: 8000,
     Disponible: true,
@@ -148,12 +148,45 @@ productos.push(Producto7 = {
 console.log(productos)
 
 
-function descuentopormayor (n){
-    return function(m){
-        return (n*m)*0.10
+
+
+//prompt(Descuento al por mayor ("minimo 5 unidades"). Elija su producto) 
+//alert = function descuentopormayor (n){
+  //  return function(m){
+    //    return (n*m)*0.10
+  //  }
+//}
+
+
+//const quintuplicador = descuentopormayor (5);
+//console.log(quintuplicador(4000))
+
+
+
+const precios = productos.map((item) => item.precio)
+console.log(precios)
+
+const Preciocontarjeta = productos.map ((item)=> item.nombre + " -- " + item.precio*1.20)
+console.log (Preciocontarjeta)
+
+
+productos.forEach ((producto, Disponible) => {
+    if(producto ==="Camiseta Seleccion argentina"){
+    console.log("Esta camiseta esta" + Disponible)}
+    else{
+        console.log("No existe ese articulo")
     }
-}
+})
 
 
-const quintuplicador = descuentopormayor (5);
-console.log(quintuplicador(4000))
+let totaldetodo = 0;
+productos.forEach((item)=> totaldetodo += item.precio)
+console.log(totaldetodo)
+
+let precioconenvio = productos.reduce((totaldetodo, producto)=> totaldetodo + producto.precio, 1800)
+console.log (precioconenvio)
+
+let Filtroproductosmayoracincomil = productos.filter( item => item.precio > 5000)
+console.log(Filtroproductosmayoracincomil)
+let Filtroproductosmenoresacincomil = productos.filter( item => item.precio < 5000)
+console.log(Filtroproductosmenoresacincomil)
