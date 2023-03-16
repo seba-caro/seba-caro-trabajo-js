@@ -190,3 +190,43 @@ let Filtroproductosmayoracincomil = productos.filter( item => item.precio > 5000
 console.log(Filtroproductosmayoracincomil)
 let Filtroproductosmenoresacincomil = productos.filter( item => item.precio < 5000)
 console.log(Filtroproductosmenoresacincomil)
+
+//console.log(document)
+
+
+//let elemento;
+//elemento = document;
+
+//elemento = document.all;
+//console.log(elemento)
+
+//const header = document.getElementsByClassName('navbar')
+//console.log (header)
+
+//const encabezado = document.getElementsByTagName ('header')
+
+//let h2 = document.getElementsByTagName ('h2')
+//console.log(h2[0].innerText)
+//h2[0].innerText = 'Veni a ver nuestros nuevos productos'
+//console.log(h2[0].innerText)
+//h2[0].textContent = 'Hay nuevas ofertas para ustedes'
+//console.log(h2[0].textContent)
+
+//console.log (document.querySelector("h2").textContent)
+//console.log (document.querySelectorAll("li")[1].textContent="Mas Ofertas")
+
+let h2 = document.querySelector('h2');
+h2.innerHTML= "<em> Nuevas ofertas en el dia de hoy</em>"
+
+h2.style.backgroundColor = "black"
+h2.style.color = "red"
+
+//h2.classList.add("rojo")
+//hs.classList.add("fondonegro")
+
+let main = document.querySelector("main")
+
+let titulo = document.createElement('h3')
+titulo.textContent = "Ante cualquier consulta contactenos"
+
+main.appendChild(titulo)
