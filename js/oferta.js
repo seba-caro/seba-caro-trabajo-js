@@ -230,3 +230,42 @@ let titulo = document.createElement('h3')
 titulo.textContent = "Ante cualquier consulta contactenos"
 
 main.appendChild(titulo)
+
+
+//let btn = document.querySelector('#btn'); con punto adelante puedo elegir una clase 
+
+//function manejarClick(){
+  //  alert("click en el boton")
+//}
+
+//btn.addEventListener("click", function(){ alert("click en boton")})
+//btn.addEventListener("click", ()=>{alert("click en boton")})
+//btn.addEventListener("click", manejarClick)
+
+function manejarClick(){
+    alert("Agregado al carrito")
+}
+
+
+btn.onclick = manejarClick // en eventos no se ponen los parentesis 
+
+// eventos mouse 
+// mouseenter cuando entras 
+// mouseout --- cuando salis 
+// mousedown --- cuando presionas 
+// click
+// dbclik --- queremos abrir un archivo 
+// mouseup -- al soltar
+
+//eventos teclado
+
+//input
+
+// keydown --- cuando dejo apretada una tecla 
+//keyup --- cuando suelto la tecla 
+//blur --- cuando salgo de foco se ejecuta 
+// focus --- cuando entro al foco se ejecuta 
+
+//cut
+//copy
+//paste 
