@@ -122,3 +122,299 @@ main{
 
 
   /* HACER QUE SE APRETANDO EL BOTON SE DESLICE Y APAREZA LA CREACION DE CUENTA */ 
+
+    /*Sobre Nosotros*/
+
+    .titulosomos {
+    padding: 10px;
+  }
+
+.content_sobre-nosotros img {
+  width: 100%;
+}
+.content_sobre-nosotros a {
+  padding: 5px;
+  margin: 5px;
+}
+
+.content_sobre-nosotros_main_texto-1{padding: 40px;
+  @media only screen and (max-width: 768px)
+
+}
+
+.content_sobre-nosotros_main_texto-2{ 
+    padding: 40px;
+  @media only screen and (max-width: 768px) 
+
+
+}
+
+.content_sobre-nosotros_main_texto-3{ 
+    padding: 40px;
+  @media only screen and (max-width: 768px)
+
+}
+
+
+/* indumentaria*/
+
+body {
+  font-family: 'Nerko One', cursive;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.page-nav {
+  background-color: #2196F3;
+  border: 1px solid black;
+  position: relative;
+}
+
+.page-nav h1 {
+  margin: 20px;
+}
+
+.button-checkout {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA; /* Blue */
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-checkout:hover {
+  background-color: #008CBA; /* Blue */
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-container {
+  margin: 15px;
+  padding: 2px 16px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.product-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-container img {
+  width: 300px;
+}
+
+.product-container h1 {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.button-add {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.button-add:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Indumentaria*/
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* cartas - productos */
+
+.container-icon{
+  position: relative;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+
+
+
+/* Main */
+.container-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item{
+  border-radius: 10px;
+}
+
+.item:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.item figure{
+  overflow: hidden;
+}
+
+.item:hover img{
+  transform: scale(1.2);
+}
+
+.info-product{
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button{
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
