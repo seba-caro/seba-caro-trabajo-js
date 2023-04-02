@@ -488,7 +488,7 @@ td {
   color: black;
 }
 .precio-tabla::before {
-  content: 'US$';
+  content: '$';
   padding-right: 0.4rem;
 }
 .button {
@@ -507,10 +507,16 @@ td {
 }
 
 
+
+
+
+
+
+
 /* DESDE AQUI EMPIEZA LA SECCIÓN DE LOS PRODUCTOS */
 .cartola {
   height: 300px;
-  width: 230px;
+  width: 300px;
   border-radius: 0.35rem;
   background: #f4f4f4;
   display: flex;
@@ -528,7 +534,8 @@ td {
 }
 /* Imagen */
 .contenedor-img {
-  height: 127px;
+  height: auto;
+  width: auto;
   overflow: hidden;
 }
 
@@ -569,7 +576,7 @@ td {
   margin: 0 .5em;
 }
 .precio::before {
-  content: 'US$';
+  content: '$';
   padding-right: 0.3rem;
 }
 .boton {

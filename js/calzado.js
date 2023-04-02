@@ -1,36 +1,168 @@
 const productos = {
     producto1: {
-      nombre: 'Papas fritas',
-      precio: '3.50',
-      descripcion: 'Papas frescas preparadas en el momento, caseras, seleccionadas exclusivamente para tener una buena calidad y con un sabor inigualable.',
-      srcImg: 'https://i.blogs.es/f9cf25/degustacion-patatas/450_1000.jpg'
+      nombre: 'Zapatilla adidas 1 ',
+      precio: '12000',
+      descripcion: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.',
+      srcImg: 'https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/F/Y/FY7756_0.jpg'
     },
     producto2: {
-      nombre: 'Hamburguesa',
-      precio: '10.00',
-      descripcion: 'La mejor Hamburguesa del mercado, con productos finamente seleccionados, una presentación única y el mejor sabor.',
-      srcImg: 'https://cocina-casera.com/wp-content/uploads/2016/11/hamburguesa-queso-receta.jpg'
+      nombre: 'Zapatillas adidas 2 ',
+      precio: '14000',
+      descripcion: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+      srcImg: 'https://woker.vtexassets.com/arquivos/ids/286737/6GV7613-000-1.jpg?v=637926234617130000'
     },
     producto3: {
-      nombre: 'Pizza',
-      precio: '15.50',
-      descripcion: 'Masa preparada en el local, fermentada el tiempo suficiente para que de una mordida puedas sentir una sensación única de sabor y textura.',
-      srcImg: 'https://elgourmet.s3.amazonaws.com/recetas/share/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png'
+      nombre: 'Zapatillas Adidas 3 ',
+      precio: '35000',
+      descripcion: 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/e3fd03c50b0a49509949ae860067ece6_9366/Zapatillas_Galaxy_6_Gris_GW4140_01_standard.jpg'
     },
     producto4: {
-      nombre: 'Completo',
-      precio: '8.50',
-      descripcion: 'Estos son los mejores completos de la ciudad, hechos con el mejor pan y ingredientes finamente seleccionados.',
-      srcImg: ''
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto5: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto6: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto7: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto8: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto9: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto10: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto11: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto12: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto13: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto14: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto15: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto15: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto16: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto17: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto18: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto19: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto20: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto21: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto22: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto23: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto24: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    },
+    producto25: {
+      nombre: 'Zapatillas Adidas 4',
+      precio: '25000',
+      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
     }
   }
-  // Se captura el template de los productos
+
   const templateProd = document.getElementById('template-prod').content
   const contenedorProd = document.querySelector('.contenedor-productos')
   const fragment = document.createDocumentFragment()
   
   
-  // TODO LO RELACIONADO A AGREGAR LOS PRODUCTOS AL DOM
+  // DOM
   Object.values(productos).forEach( producto => {
     templateProd.querySelector('.div-info .nombre-prod').textContent = producto.nombre
     templateProd.querySelector('.div-precio-boton .precio').textContent = producto.precio
@@ -42,7 +174,7 @@ const productos = {
   })
   contenedorProd.appendChild(fragment)
   
-  // TODO LO RELACIONADO AL CARRITO DE COMPRA
+  // CARRITO 
   let carrito = {}
   const templateTabla = document.getElementById('agregar-producto-al-carro').content
   const tbodyCarrito = document.getElementById('carrito-body')
