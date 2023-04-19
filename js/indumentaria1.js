@@ -1,3 +1,9 @@
+window.addEventListener("load", function(){
+    this.document.getElementById("cargando").classList.toggle("cargando2")
+})
+
+
+
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector(
 	'.container-cart-products'

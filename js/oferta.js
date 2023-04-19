@@ -1,312 +1,158 @@
-//alert("Ingrese el producto de oferta que desea llevar, para salir ingrese 0")
-//let seleccionarProductos = Number(prompt("1-remeras 2x $3000 2- pantalon 2x $5500 3-zapatillas 2 pares $16000 4- shorts 4x $8000 "))
-//let seleccionarCantidad;
-//let total = 0;
 
 
-//const cantidad = (cant, precio) => {
-//    return cant * precio
-//}
-
-
-//while (seleccionarProductos != 0) {
-//    switch (seleccionarProductos) {
-//        case 1:
- //           seleccionarCantidad = Number(prompt("Cuantas promos de remeras desea llevar"))
-  //          total += cantidad(seleccionarCantidad, 3000)
-    //        break;
-      //  case 2:
-        //    seleccionarCantidad = Number(prompt("cuantos promos de pantalones desea llevar"))
-          //  total += cantidad(seleccionarCantidad, 5500)
-            //break;
-       // case 3:
-         //   seleccionarCantidad = Number(prompt("Cuantas promos de zapatillas desea llevar"))
-           // total += cantidad(seleccionarCantidad, 16000)
-           // break;
-      //  case 4:
-        //    seleccionarCantidad = Number(prompt("Cuantos promos de shores desea llevar"))
-          //  total += cantidad(seleccionarCantidad, 8000)
-          //  break;
-      //  case 5:
-
-     //   default:
-       //     break;
-   // }
-   // seleccionarProductos = Number(prompt("1-remeras 2x $3000 2- pantalon 2x $5500 3-zapatillas 2 pares $16000 4- shorts 4x $8000 - 5 No deseo ninguna de estas ofertas"))
-//}
-
-//alert("el total de la compra es de: " + total)
-
-
-//const envio = () => {
-  //  if (total >= 20000) {
-    //    alert("El envio es gratuito")
-   // } else {
-     //   total += 1000
-       // alert("el costo de envio es de 1000, el total es: " + total)
-    //}
-//}
-
-
-//const metodoDePago = () => {
- //   let metodo = prompt("ingrese el metodo de pago, tarjeta o efectivo")
-   // if (metodo == "tarjeta") {
-     //   total *= 1.1
-       // console.log(total);
-  //  } else if (metodo == "efectivo") {
-    //    total -= 1000
-      //  alert("tenes un descuento de 1000, el total es:" + total)
-    //}
-
-
-//}
-
-//metodoDePago();
-
-
-let producto0 = {
-    nombre: "Camiseta Seleccion argentina",
-    precio: 12000,
-    Disponible: true,
-    
-}
-    console.log(producto0);
-
-
-let producto1 = {
-    nombre: "Camiseta blanca 3 estrellas",
-    precio: 4000,
-    Disponible: true,
-}
-
-    let producto2 = {
-        nombre: "Camiseta Entrada en calor",
-    precio: 6000,
-    Disponible: true,
-    }
-    let producto3 = {
-        nombre: "Camiseta Entrada en calor azul y negra",
-    precio: 6000,
-    Disponible: true,
-    }
-
-    let promo1 = {
-        nombre: "2 remeras",
-        precio: 3000,
-        Disponible: true,
-    }
-    
-    
-    let Promo2 = {
-        nombre: "2 pantalones",
-        precio: 5500,
-        Disponible: true,
-    }
-    
-        let Promo3 = {
-            nombre: "2 pares de zapatillas",
-        precio: 16000,
-        Disponible: true,
-        }
-        let Promo4 = {
-            nombre: "4 shorts",
-        precio: 8000,
-        Disponible: true,
-        }
-
-const promociones = [ promo1, Promo2, Promo3, Promo4];
-
-const productos = [producto0, producto1, producto2, producto3];
-
-for(let i=0; i<4; i+=1){
-    console.log(promociones[i])
-}
-
-for(let i=0; i<4; i+=1){
-    console.log(productos[i])
-}
-
-
-productos.push(Producto4 = {
-    nombre: "Chomba Seleccion Argentina",
-    precio: 5000,
-    Disponible: true,
-});
-console.log(productos)
-
-productos.push(Producto5 = {
-    nombre: "Camiseta campeones edicion limitada ",
-    precio: 4000,
-    Disponible: true,
-});
-console.log(productos)
-
-productos.push(Producto6 = {
-    nombre: "Buzo campeones edicion limitada",
-    precio: 8000,
-    Disponible: true,
-});
-console.log(productos)
-
-
-
-
-
-
-
-
-
-
-
-
-
-//prompt(Descuento al por mayor ("minimo 5 unidades"). Elija su producto) 
-//alert = function descuentopormayor (n){
-  //  return function(m){
-    //    return (n*m)*0.10
-  //  }
-//}
-
-
-//const quintuplicador = descuentopormayor (5);
-//console.log(quintuplicador(4000))
-
-
-
-const precios = productos.map((item) => item.precio)
-console.log(precios)
-
-const Preciocontarjeta = productos.map ((item)=> item.nombre + " -- " + item.precio*1.20)
-console.log (Preciocontarjeta)
-
-
-productos.forEach ((producto, Disponible) => {
-    if(producto ==="Camiseta Seleccion argentina"){
-    console.log("Esta camiseta esta" + Disponible)}
-    else{
-        console.log("No existe ese articulo")
-    }
+window.addEventListener("load", function(){
+  this.document.getElementById("cargando").classList.toggle("cargando2")
 })
 
 
-let totaldetodo = 0;
-productos.forEach((item)=> totaldetodo += item.precio)
-console.log(totaldetodo)
 
-let precioconenvio = productos.reduce((totaldetodo, producto)=> totaldetodo + producto.precio, 1800)
-console.log (precioconenvio)
+const productos = {
+  producto1: {
+    nombre: 'Combo 1 - Pantalon Adidas ',
+    precio: '12000',
+    descripcion: '',
+    srcImg: 'https://sporting.vtexassets.com/arquivos/ids/431591-800-800?v=637746441732830000&width=800&height=800&aspect=true'
+  },
+  producto2: {
+    nombre: 'Combo 2 -  ',
+    precio: '14000',
+    descripcion: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+    srcImg: 'https://woker.vtexassets.com/arquivos/ids/286737/6GV7613-000-1.jpg?v=637926234617130000'
+  },
+  producto3: {
+    nombre: 'Combo 3 - ',
+    precio: '25000',
+    descripcion: 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv',
+    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/e3fd03c50b0a49509949ae860067ece6_9366/Zapatillas_Galaxy_6_Gris_GW4140_01_standard.jpg'
+  },
+  producto4: {
+    nombre: 'Combo 4 -',
+    precio: '35000',
+    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+  },
+  producto5: {
+    nombre: 'Combo 5 -',
+    precio: '15000',
+    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+  },
+  producto6: {
+    nombre: 'Combo 6 -',
+    precio: '50000',
+    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
+    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+  },
+}
 
-let Filtroproductosmayoracincomil = productos.filter( item => item.precio > 5000)
-console.log(Filtroproductosmayoracincomil)
-let Filtroproductosmenoresacincomil = productos.filter( item => item.precio < 5000)
-console.log(Filtroproductosmenoresacincomil)
-
-//console.log(document)
-
-
-//let elemento;
-//elemento = document;
-
-//elemento = document.all;
-//console.log(elemento)
-
-//const header = document.getElementsByClassName('navbar')
-//console.log (header)
-
-//const encabezado = document.getElementsByTagName ('header')
-
-//let h2 = document.getElementsByTagName ('h2')
-//console.log(h2[0].innerText)
-//h2[0].innerText = 'Veni a ver nuestros nuevos productos'
-//console.log(h2[0].innerText)
-//h2[0].textContent = 'Hay nuevas ofertas para ustedes'
-//console.log(h2[0].textContent)
-
-//console.log (document.querySelector("h2").textContent)
-//console.log (document.querySelectorAll("li")[1].textContent="Mas Ofertas")
-
-let h2 = document.querySelector('h2');
-h2.innerHTML= "<em> Nuevas ofertas en el dia de hoy</em>"
-
-h2.style.backgroundColor = "black"
-h2.style.color = "red"
-
-//h2.classList.add("rojo")
-//hs.classList.add("fondonegro")
-
-let main = document.querySelector("main")
-
-let titulo = document.createElement('h3')
-titulo.textContent = "Ante cualquier consulta contactenos"
-
-main.appendChild(titulo)
+const templateProd = document.getElementById('template-prod').content
+const contenedorProd = document.querySelector('.contenedor-productos')
+const fragment = document.createDocumentFragment()
 
 
-//let btn = document.querySelector('#btn'); con punto adelante puedo elegir una clase 
+// DOM
+Object.values(productos).forEach( producto => {
+  templateProd.querySelector('.div-info .nombre-prod').textContent = producto.nombre
+  templateProd.querySelector('.div-precio-boton .precio').textContent = producto.precio
+  templateProd.querySelector('.div-info .descripcion-prod').textContent = producto.descripcion
+  templateProd.querySelector('.contenedor-img2 img').setAttribute('alt', producto.nombre)
+  templateProd.querySelector('.contenedor-img2 img').setAttribute('src', producto.srcImg)
+  const clone = templateProd.cloneNode(true)
+  fragment.appendChild(clone)
+})
+contenedorProd.appendChild(fragment)
 
-//function manejarClick(){
-  //  alert("click en el boton")
-//}
+// CARRITO 
+let carrito = {}
+const templateTabla = document.getElementById('agregar-producto-al-carro').content
+const tbodyCarrito = document.getElementById('carrito-body')
+const fragmentTabla = document.createDocumentFragment()
+const templateFoot = document.getElementById('tfooter').content
+const tfootCarrito = document.getElementById('footer')
 
-//btn.addEventListener("click", function(){ alert("click en boton")})
-//btn.addEventListener("click", ()=>{alert("click en boton")})
-//btn.addEventListener("click", manejarClick)
+contenedorProd.addEventListener('click', e => {
+  
+  if(e.target.textContent === "Agregar") {
+    setCarrito(e.target.parentElement.parentElement)
+  }
+  e.stopPropagation();
+})
+const setCarrito = e => {
+  const pivoteCarrito = {
+    nombre: e.querySelector('.div-info .nombre-prod').textContent,
+    precio: e.querySelector('.div-precio-boton .precio').textContent,
+    cantidad: 1
+  }
+  if(carrito.hasOwnProperty(pivoteCarrito.nombre)){
+    carrito[pivoteCarrito.nombre].cantidad += 1
+  } else {
+    carrito[pivoteCarrito.nombre] = {...pivoteCarrito}
+  }
+  pintarTabla(carrito)
+}
 
-//function manejarClick(){
-  //  alert("Agregado al carrito")
-//}
-
-
-//btn.onclick = manejarClick // en eventos no se ponen los parentesis 
-
-// eventos mouse 
-// mouseenter cuando entras 
-// mouseout --- cuando salis 
-// mousedown --- cuando presionas 
-// click
-// dbclik --- queremos abrir un archivo 
-// mouseup -- al soltar
-
-//eventos teclado
-
-//input
-
-// keydown --- cuando dejo apretada una tecla 
-//keyup --- cuando suelto la tecla 
-//blur --- cuando salgo de foco se ejecuta 
-// focus --- cuando entro al foco se ejecuta 
-
-//cut
-//copy
-//paste 
-
-
-// LOCALSTORAGE 
-
-
-//localStorage.setItem('nombre', 'sebastian')
-
-
-//let productosStorage = localStorage.getItem("producto1")
-//console.log(productosStorage)
-
-
-const promoString = JSON.stringify(promociones)
-console.log(promoString)
-
-
-const productoString = JSON.stringify(productos)
-console.log(productoString)
-
-
-localStorage.setItem("productos", productoString)
-localStorage.setItem("promociones", promoString)
-
-
-//const productoJSON = JSON.parse(localStorage.getItem('productos'))
-//console.log(productoJSON)
-//console.log(typeof productoJSON)
-//console.log(productoJSON.precio)
-
-//objeto a string
-// string a objeto 
+const pintarTabla = objetoCarrito => {
+  Object.values(objetoCarrito).forEach( objeto => {
+    const cloneTabla = templateTabla.cloneNode(true)
+    cloneTabla.getElementById('producto').textContent = objeto.nombre
+    cloneTabla.getElementById('cant').textContent = objeto.cantidad
+    cloneTabla.getElementById('precio-uni').textContent = objeto.precio
+    let precioTotal = parseFloat(objeto.precio) * objeto.cantidad
+    cloneTabla.getElementById('precio-total-prod').textContent = precioTotal.toFixed(2)
+    fragmentTabla.appendChild(cloneTabla)
+  })
+  tbodyCarrito.innerHTML = ''
+  tbodyCarrito.appendChild(fragmentTabla)
+  pintarFooter()
+}
+const pintarFooter = () => {
+  tfootCarrito.innerHTML = ''
+  if(Object.keys(carrito).length === 0) {
+    tfootCarrito.innerHTML = '<tr><td colspan = 4>¡No hay ningun elemento en el carrito!</td></tr>'
+  } else {
+    const total = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + (cantidad * precio),0)
+    templateFoot.getElementById('total-a-pagar').textContent = total.toFixed(2)
+    const cloneFoot = templateFoot.cloneNode(true)
+    fragment.appendChild(cloneFoot)
+    tfootCarrito.appendChild(fragment)
+    //Boton Vaciar carrito
+    const botonVaciar = document.getElementById('vaciar-tabla')
+botonVaciar.addEventListener('click', () => {
+      carrito = {}
+      pintarTabla(carrito)
+      pintarFooter()
+    })
+    
+    //Botones aumentar y disminuir cantidades
+    
+  }
+}
+tbodyCarrito.addEventListener('click', e => {
+  
+  if(e.target.classList.contains('button')) {
+    aumentarDisminuir(e.target)
+  }
+})
+const aumentarDisminuir = boton => {
+  if(boton.textContent === '+'){
+    const indicador = boton.parentElement.parentElement.firstElementChild.textContent
+    Object.values(carrito).forEach( elemento => {
+      if(elemento.nombre === indicador) {
+      carrito[elemento.nombre].cantidad++  
+      }
+    })
+  }
+  if(boton.textContent === '-') {
+    const indicador = boton.parentElement.parentElement.firstElementChild.textContent
+    Object.values(carrito).forEach( elemento => {
+      if(elemento.nombre === indicador) {
+      carrito[elemento.nombre].cantidad--
+        if(carrito[elemento.nombre].cantidad === 0) {
+          delete carrito[elemento.nombre]
+        }
+      }
+    })
+  }
+  pintarTabla(carrito)
+  pintarFooter()
+}

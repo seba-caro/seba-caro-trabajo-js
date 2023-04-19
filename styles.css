@@ -15,11 +15,11 @@ footer {
     padding-left: 15px;
 }
 
-
 nav{
-    width: 100%;
     background-image: url(./img/fondonegro.jpg);
 }
+
+
 .escudo {
     padding: 15px;
 }
@@ -33,13 +33,17 @@ nav{
 }
 
 main{
-    background-image: url(./img/fondo6.webp);
+    background-image: url(./img/fondomain1.jpg);
     width: 100%;
     height: 100%;
 }
 
 .c-blanco{
     color: white;
+}
+
+.c-negro{
+  color: #000;
 }
 
 .imgoferta{
@@ -57,6 +61,160 @@ main{
     justify-items: center;
     align-items: center;
 }
+
+
+.formulariosomos{
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  max-height: 1000px;
+  background-image: url(./img/fondonegro.jpg);
+  border-radius: 10px;
+  margin-top: 10px;
+  display: grid;
+  padding-bottom: 30px;
+
+}
+
+.tituloformulario{
+  font-size: 2rem;
+  text-align: center;
+}
+.infoformulario{
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  align-items: center;
+
+}
+
+
+
+/*efecto cargado*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cargando{
+  background-image: url(./img/fondocargando6.png);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 1 ease-in-out ;
+  
+}
+
+.cargando2{
+  clip-path: circle(0% at 100% 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* cuenta*/
 
@@ -258,15 +416,6 @@ button {
   background-color: #4CAF50; /* Green */
   color: white;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Indumentaria*/
@@ -510,13 +659,10 @@ td {
 
 
 
-
-
-
-/* DESDE AQUI EMPIEZA LA SECCIÓN DE LOS PRODUCTOS */
+/*   LOS PRODUCTOS */
 .cartola {
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   border-radius: 0.35rem;
   background: #f4f4f4;
   display: flex;
@@ -532,15 +678,14 @@ td {
   transition: transform 0.3s;
   box-shadow: 0 0 2rem hsla(240, 100%, 90%, 0.5);
 }
-/* Imagen */
+
 .contenedor-img {
-  height: auto;
+  height: 350px;
   width: auto;
   overflow: hidden;
 }
 
 
-/* Nombre y descripción del producto */
 .div-info {
   flex: 1;
   border-bottom: var(--border);
@@ -565,7 +710,7 @@ td {
   overflow: hidden;
   opacity: .7;
 }
-/* Precio y Boton Carrito */
+
 .div-precio-boton {
   display: flex;
   align-items: center;
@@ -616,9 +761,50 @@ td {
 .carrito {
   width: 18px;
 }
-/* Contenedor de todos los productos */
+
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ofertas*/
+
+.cartola2 {
+  height: 750px;
+  width: 75%;
+  border-radius: 0.35rem;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow:0px 0px 1rem hsla(240, 100%, 90%, 0.3);
+  transition: transform 0.1s;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+
+.contenedor-img2 {
+padding: 10px;
+  justify-content: end;
+  display: flex;
+  height: auto;
+  width: 75%;
+  overflow: hidden;
+}
+
+
+

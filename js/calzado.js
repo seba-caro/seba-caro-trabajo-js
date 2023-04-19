@@ -1,160 +1,165 @@
+window.addEventListener("load", function(){
+  this.document.getElementById("cargando").classList.toggle("cargando2")
+})
+
+
 const productos = {
     producto1: {
-      nombre: 'Zapatilla adidas 1 ',
-      precio: '12000',
-      descripcion: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.',
-      srcImg: 'https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/F/Y/FY7756_0.jpg'
+      nombre: 'Zapatillas NIKE Pro 1 ',
+      precio: '60000',
+      descripcion: 'Ideales para andar y caminar. Color Unico',
+      srcImg: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto2: {
-      nombre: 'Zapatillas adidas 2 ',
-      precio: '14000',
-      descripcion: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
-      srcImg: 'https://woker.vtexassets.com/arquivos/ids/286737/6GV7613-000-1.jpg?v=637926234617130000'
+      nombre: 'Zapatillas Nike Max ',
+      precio: '70000',
+      descripcion: 'Ideales para andar y caminar. Color marron con suela blanca.',
+      srcImg: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80'
     },
     producto3: {
-      nombre: 'Zapatillas Adidas 3 ',
+      nombre: 'Zapatillas Nike Run ',
       precio: '35000',
-      descripcion: 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/e3fd03c50b0a49509949ae860067ece6_9366/Zapatillas_Galaxy_6_Gris_GW4140_01_standard.jpg'
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Color Verde oscuro con suela blanca',
+      srcImg: 'https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'
     },
     producto4: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Run "R"',
+      precio: '50000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Color rojo con suela blanca',
+      srcImg: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
     },
     producto5: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike "B"',
+      precio: '65000',
+      descripcion: 'Ideales para el entrenamiento del dia a dia. Estas son las zapatillas tipo botita son ideales para deporte como el basquet, handball, voley y otros donde la superfecie de la cancha son identicas. Color negro con suela blanca',
+      srcImg: 'https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto6: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Pro 2 ',
+      precio: '50000',
+      descripcion: 'Ideales para andar, caminar, correr y entrenar. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Ademas esta hecha de material mas resistente por lo cual su duracion aumenta. Color negra',
+      srcImg: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
     },
     producto7: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Edicion "Superreo" ',
+      precio: '91000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Color verde con suela blanca',
+      srcImg: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'
     },
     producto8: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Fast 1 ',
+      precio: '48000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80'
     },
     producto9: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Max 3',
+      precio: '37000',
+      descripcion: 'Ideales para andar y caminar. Color blanca.',
+      srcImg: 'https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'
     },
     producto10: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Edicion "Colours"',
+      precio: '76000',
+      descripcion: 'Ideales para andar y caminar. Posee una gran gama de colores que hacen que esta zapatilla sea genial para quien la lleve.',
+      srcImg: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto11: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Nike Run 5',
+      precio: '38000',
+      descripcion: 'Ideales para andar, caminar, correr y entrenar. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Ademas esta hecha de material mas resistente por lo cual su duracion aumenta. Color negra, suela blanca con algunos detalles.',
+      srcImg: 'https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto12: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run',
+      precio: '45000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto13: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run Edicion "Mamba Black"',
+      precio: '90000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1059&q=80'
     },
     producto14: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas "Ou"',
+      precio: '40000',
+      descripcion: 'Ideales para andar y caminar. Color blanca y marron con logo naranja y suela balnca con marron.',
+      srcImg: 'https://images.unsplash.com/photo-1580980379292-082d6126499c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1133&q=80'
     },
     producto15: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run 6',
+      precio: '62000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1558191053-c03db2757e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto15: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run Black',
+      precio: '80000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1544327415-cfb77383dabc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=854&q=80'
     },
     producto16: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run 9',
+      precio: '50000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario. Color gris',
+      srcImg: 'https://images.unsplash.com/photo-1556278777-a2a98c0d56da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto17: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Blue',
+      precio: '70000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1532735180885-700d50fafbaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto18: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Edicion "Pro"',
+      precio: '85000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1520256862855-398228c41684?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'
     },
     producto19: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas 7',
+      precio: '53000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto20: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run 8',
+      precio: '40000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1613972798457-45fc5237ae32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto21: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas Run 12',
+      precio: '65000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1606297255627-c58c609140e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
     },
     producto22: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Botines Adidas Pro',
+      precio: '75000',
+      descripcion: 'Ideales para el entrenamiento del dia a dia. Color Verde, Consulta por sus dos versiones, con o sin tapones.',
+      srcImg: 'https://images.unsplash.com/photo-1604727260027-e35db6bffb08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto23: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Adidas "OU" 2',
+      precio: '30000',
+      descripcion: 'Ideales para andar y caminar. Color blanca con logo negro.',
+      srcImg: 'https://images.unsplash.com/photo-1620844595703-c47c4ad2cc2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
     },
     producto24: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+      nombre: 'Zapatillas Run 10',
+      precio: '65000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'
     },
     producto25: {
-      nombre: 'Zapatillas Adidas 4',
-      precio: '25000',
-      descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-      srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
-    }
+      nombre: 'Zapatillas Nike Pro 8',
+      precio: '55000',
+      descripcion: 'Ideales para andar, caminar y correr. Poseen una suela antideslizante y de goma que se adapta perfectamente al pie del usuario.',
+      srcImg: 'https://images.unsplash.com/photo-1611080028152-8f14b0078f9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80'
+    },
   }
 
   const templateProd = document.getElementById('template-prod').content
