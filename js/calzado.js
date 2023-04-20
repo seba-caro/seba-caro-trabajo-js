@@ -206,6 +206,7 @@ const productos = {
       carrito[pivoteCarrito.nombre] = {...pivoteCarrito}
     }
     pintarTabla(carrito)
+    addLocalStorage()
   }
   
   const pintarTabla = objetoCarrito => {
@@ -273,3 +274,19 @@ const productos = {
     pintarTabla(carrito)
     pintarFooter()
   }
+
+
+
+function addLocalStorage(){
+  localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+
+
+  window.onload = function(){
+  const storage = JSON.parse(localStorage.getItem('carrito'));
+  if(storage){
+    carrito=storage;
+    renderCarrito()
+  }
+  }
+  

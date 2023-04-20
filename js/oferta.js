@@ -9,39 +9,39 @@ window.addEventListener("load", function(){
 const productos = {
   producto1: {
     nombre: 'Combo 1 - Pantalon Adidas ',
-    precio: '12000',
-    descripcion: '',
+    precio: '2x12000',
+    descripcion: 'Oferta de pantalon Adidas retro.Llevate uno por $7000 pesos y 2 por $6000. Si llevas mas de 5 te cobramos 4000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',  
     srcImg: 'https://sporting.vtexassets.com/arquivos/ids/431591-800-800?v=637746441732830000&width=800&height=800&aspect=true'
   },
   producto2: {
-    nombre: 'Combo 2 -  ',
-    precio: '14000',
-    descripcion: 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+    nombre: 'Combo 2 - Zapatillas Adidas ',
+    precio: '2x24000',
+    descripcion: 'Oferta de zapatillas adidas. Ideales para vestir y andar. Unico color disponible en blanco. Llevate un par por $13000 pesos y 2 por $24000. Si llevas mas de 5 te cobramos 10000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',
     srcImg: 'https://woker.vtexassets.com/arquivos/ids/286737/6GV7613-000-1.jpg?v=637926234617130000'
   },
   producto3: {
-    nombre: 'Combo 3 - ',
-    precio: '25000',
-    descripcion: 'vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv',
-    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/e3fd03c50b0a49509949ae860067ece6_9366/Zapatillas_Galaxy_6_Gris_GW4140_01_standard.jpg'
+    nombre: 'Combo 3 - Zapatillas Nike ',
+    precio: '2x25000',
+    descripcion: 'Oferta de zapatillas Nike. Ideales para andar, correr y entrenar. La suela se adapta perfectamente al pie del usuario. Unico color disponible en negro. Llevate un par por $15000 pesos y 2 por $25000. Si llevas mas de 5 te cobramos 11000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',
+    srcImg: 'https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb6cb36e5/products/NI_DC8992-003/NI_DC8992-003-1.JPG'
   },
   producto4: {
-    nombre: 'Combo 4 -',
-    precio: '35000',
-    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    nombre: 'Combo 4 - Buzo Adidas',
+    precio: '2x25000',
+    descripcion: 'Oferta de Buzo Adidas con capucha. Ideales para cualquier ocacion. Unico color disponible en Negro. Llevate uno por $13000 pesos y 2 por $25000. Si llevas mas de 5 te cobramos 10000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',
+    srcImg: 'https://ferreira.vtexassets.com/arquivos/ids/387803-800-auto?v=637756895012370000&width=800&height=auto&aspect=true'
   },
   producto5: {
-    nombre: 'Combo 5 -',
-    precio: '15000',
-    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    nombre: 'Combo 5 - Ojotas Adidas',
+    precio: '2x15000',
+    descripcion: 'Oferta de Ojotas adidas. Ideales para andas y el dia a dia. Unico color disponible en negro. Llevate un par por $9000 pesos y 2 por $15000. Si llevas mas de 5 te cobramos 6000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',
+    srcImg: 'https://essential.vtexassets.com/arquivos/ids/310842-800-auto?v=637124624147200000&width=800&height=auto&aspect=true'
   },
   producto6: {
-    nombre: 'Combo 6 -',
-    precio: '50000',
-    descripcion: 'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc',
-    srcImg: 'https://assets.adidas.com/images/w_600,f_auto,q_auto/9326e8db8d8e4e509e42ad26010cf693_9366/Zapatillas_adidas_4DFWD_Pulse_Negro_Q46451_01_standard.jpg'
+    nombre: 'Combo 6 - Buzo Nike Retro',
+    precio: '2x20000',
+    descripcion: 'Oferta de Buzo Nike version retro. Unico color disponible en Gris. Llevate uno por $13000 pesos y 2 por $20000. Si llevas mas de 5 te cobramos 80000 c/u. Las compras al por mayor se realizan a traves de nuestro whatsapp',
+    srcImg: 'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/150/503/products/913a57d7-bdb5-47a3-9192-ccad0406a15b1-12dc2c0165f191f56e16793499501734-640-0.webp'
   },
 }
 
@@ -89,6 +89,7 @@ const setCarrito = e => {
     carrito[pivoteCarrito.nombre] = {...pivoteCarrito}
   }
   pintarTabla(carrito)
+  addLocalStorage()
 }
 
 const pintarTabla = objetoCarrito => {
@@ -156,3 +157,19 @@ const aumentarDisminuir = boton => {
   pintarTabla(carrito)
   pintarFooter()
 }
+
+
+
+function addLocalStorage(){
+  localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+
+
+  window.onload = function(){
+  const storage = JSON.parse(localStorage.getItem('carrito'));
+  if(storage){
+    carrito=storage;
+    renderCarrito()
+  }
+  }
+  

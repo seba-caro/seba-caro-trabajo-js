@@ -390,7 +390,7 @@ button {
 }
 
 .product-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
 }
 
 .product-container img {
@@ -437,6 +437,8 @@ img{
 
 .container-icon{
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .count-products{
@@ -536,9 +538,6 @@ img{
 }
 
 
-
-
-/* Main */
 .container-items{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -549,9 +548,7 @@ img{
   border-radius: 10px;
 }
 
-.item:hover{
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-}
+
 
 .item img{
   width: 100%;
@@ -566,7 +563,7 @@ img{
 }
 
 .item:hover img{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .info-product{
@@ -590,6 +587,59 @@ img{
   padding: 15px 10px;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+.modal-container{
+  position: relative;
+}
+
+.modal-container.active{
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  margin-top: 20px;
+  margin-left: 500px;
+  z-index: 2;
+}
+
+.modal-container img{
+  z-index: 1;
+  
+}
+.modal-container.active::after{
+  content:'';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.60);
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* calzado*/
@@ -783,10 +833,10 @@ td {
 /*ofertas*/
 
 .cartola2 {
-  height: 750px;
-  width: 75%;
+  height: 900px;
+  width: 60%;
   border-radius: 0.35rem;
-  background: #f4f4f4;
+  background-color:white;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -798,13 +848,25 @@ td {
 
 
 .contenedor-img2 {
-padding: 10px;
-  justify-content: end;
+  height: 750px;
+  padding: 10px;
+  justify-content: center;
   display: flex;
-  height: auto;
-  width: 75%;
   overflow: hidden;
+
 }
 
 
 
+/*
+.cuadrado {
+  height: 500px;
+  width: 500px;
+  border-radius: 0.35rem;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem;
+}
+*/
