@@ -858,15 +858,21 @@ td {
 
 
 
-/*
-.cuadrado {
-  height: 500px;
-  width: 500px;
-  border-radius: 0.35rem;
-  background-color:black;
-  display: flex;
-  justify-content: center;
 
-  margin: 1rem;
+.cuadrado {
+  color: white;
+  height: 350px;
+  width: 400px ;
+  border-radius: 5px;
+  background-image: url(./img/fondonegro.jpg);
+position: relative;
+text-align: center;
 }
-*/
+
+.cuadrado p {
+  padding: 25px;
+}
+
+.cuadrado h3{
+  padding: 10px;
+}
